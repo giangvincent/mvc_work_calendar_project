@@ -291,19 +291,19 @@
   overflow: hidden;
   text-overflow: ellipsis;
 }
-#cal-day-box .day-highlight.dh-event-important {
+#cal-day-box .day-highlight.dh-event-important , #cal-day-box .day-highlight.dh-work-doing {
   border: 1px solid #ad2121;
 }
-#cal-day-box .day-highlight.dh-event-warning {
+#cal-day-box .day-highlight.dh-event-warning,#cal-day-box .day-highlight.dh-work-cancel {
   border: 1px solid #e3bc08;
 }
-#cal-day-box .day-highlight.dh-event-info {
+#cal-day-box .day-highlight.dh-event-info,#cal-day-box .day-highlight.dh-event-planning {
   border: 1px solid #1e90ff;
 }
-#cal-day-box .day-highlight.dh-event-inverse {
+#cal-day-box .day-highlight.dh-event-inverse,#cal-day-box .day-highlight.dh-event-fail {
   border: 1px solid #1b1b1b;
 }
-#cal-day-box .day-highlight.dh-event-success {
+#cal-day-box .day-highlight.dh-event-success,#cal-day-box .day-highlight.dh-event-complete {
   border: 1px solid #006400;
 }
 #cal-day-box .day-highlight.dh-event-special {
@@ -332,13 +332,19 @@
   margin-top: 3px;
 }
 .work-planning {
-    background-color: #800080;
+    background-color: #1e90ff;
 }
 .work-doing {
-    background-color: #1e90ff;
+    background-color: #ad2121;
 }
 .work-complete {
     background-color: #e3bc08;
+}
+.work-cancel {
+    background-color: #800080;
+}
+.work-fail {
+    background-color: #1b1b1b;
 }
 .event-important {
   background-color: #ad2121;

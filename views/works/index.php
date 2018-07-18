@@ -45,7 +45,7 @@ if (isset($_GET['delete']) && $_GET['delete'] == 1) {
         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
         <h3 class="modal-title">Event</h3>
       </div>
-      <div class="modal-body" style="height: 400px">
+      <div class="modal-body">
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -68,6 +68,11 @@ if (isset($_GET['delete']) && $_GET['delete'] == 1) {
         <div class="form-group">
           <label for="exampleInputEmail1">Name work</label>
           <input class="form-control" type="text" name="name" id="name" placeholder="Tên công việc" required>
+        </div>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Detail work</label>
+          
+          <textarea name="detail" id="detail" cols="30" rows="10" class="form-control"></textarea>
         </div>
         <div class="form-group">
           <label for="exampleInputEmail1">Start date</label>
@@ -94,7 +99,9 @@ if (isset($_GET['delete']) && $_GET['delete'] == 1) {
           <select name="status" id="status" class="form-control">
             <option value="planning">Planning</option>
             <option value="doing">Doing</option>
-            <option value="complete"></option>
+            <option value="complete">Complete</option>
+            <option value="cancel">Cancel</option>
+            <option value="fail">Fail</option>
           </select>
         </div>
 

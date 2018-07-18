@@ -2,6 +2,10 @@
 	<div class="row well">
 		<?php echo $work->name; ?>
 	</div>
+	<div class="row">
+		<pre><?php echo $work->detail; ?></pre>
+		
+	</div>
 	<div class="row well">
 		<div class="col-xs-12">
 			<div class="col-xs-6">Start date</div>
